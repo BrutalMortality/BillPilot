@@ -116,6 +116,17 @@ function saveAccount() {
     </button>
   `;
 }
+function continueToBills() {
+  document.querySelector(".card").innerHTML = `
+    <h1>Let's add your bills</h1>
+
+    <p>
+      Add every bill you pay during the month.
+    </p>
+
+    <button onclick="showBillForm()">Add Bill</button>
+  `;
+}
 </script>
 </body>
 </html>
