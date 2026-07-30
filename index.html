@@ -60,9 +60,21 @@
     Just answer a few questions and I'll do the planning.
   </p>
 
-  <button>Continue</button>
+  <button onclick="startSetup()">Continue</button>
 
 </div>
+<script>
+function startSetup() {
+  document.querySelector(".card").innerHTML = `
+    <h1>Where does your paycheck go?</h1>
 
+    <p>
+      Let's start by adding the account where your paycheck is deposited.
+    </p>
+
+    <button>Add Account</button>
+  `;
+}
+</script>
 </body>
 </html>
