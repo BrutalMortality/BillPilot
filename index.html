@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+J<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -72,9 +72,26 @@ function startSetup() {
       Let's start by adding the account where your paycheck is deposited.
     </p>
 
-    <button>Add Account</button>
+    <button onclick="showAccountForm()">Add Account</button>
   `;
 }
+function showAccountForm() {
+  document.querySelector(".card").innerHTML = `
+    <h1>Add Account</h1>
+
+    <p>What should BillPilot call this account?</p>
+
+    <input
+      type="text"
+      id="accountName"
+      placeholder="Example: Main Checking"
+      style="width:100%;padding:16px;margin-bottom:16px;border:none;border-radius:12px;font-size:18px;"
+    >
+
+    <button>Save Account</button>
+  `;
+}
+
 </script>
 </body>
 </html>
